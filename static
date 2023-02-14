@@ -1,0 +1,16 @@
+public class test {
+
+   static int count = 0;//will get memory only once and retain its value
+
+    test() {
+        count++;//incrementing the value of static variable
+        System.out.println(count);
+    }
+
+    public static void main(String args[]) {
+//creating objects
+        test c1 = new test();
+        test c2 = new test();
+        test c3 = new test();
+    }
+}
