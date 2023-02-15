@@ -1,0 +1,35 @@
+package payilagam.static_method;
+
+public class example2 {
+    int balance;
+    String bank,name;
+    static int debitXcount, creditXcount;
+    
+    example2(String name,String bank,int balance){
+        this.name = name;
+        this.bank = bank;
+        this.balance = balance;
+    }
+    void credit(int amount){
+        System.out.println("before account balance of "+name+" and the balance is "+balance);
+        balance = balance + amount;
+        creditXcount = creditXcount+1;
+        System.out.println("after account balance of "+name+" and the balance is "+balance);
+    }
+    void debit(int amount){
+        System.out.println("before account balance of "+name+" and the balance is "+balance);
+        balance = balance - amount;
+        debitXcount = debitXcount+1;
+        System.out.println("after account balance of "+name+" and the balance is "+balance);
+    }
+
+    public static void main(String[] args) {
+        example2 p1 = new example2("ram","icici",25000);
+        example2 p2 = new example2("sam","iob",30000);
+        p1.credit(5000);
+        p2.credit(5000);
+        p2.debit(5000);
+        System.out.println("this is a credit count "+creditXcount);
+        System.out.println("this is a debit count "+debitXcount);
+    }
+}
