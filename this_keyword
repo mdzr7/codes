@@ -1,0 +1,13 @@
+public class this_keyword {
+    int x = 10;
+    
+    void m(){
+        int x = 5;
+        System.out.println(this.x); // this keyword points out INSTANCE VARIABLE
+    }
+
+    public static void main(String[] args) {
+        this_keyword that = new this_keyword();
+        that.m();
+    }
+}
