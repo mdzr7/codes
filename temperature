@@ -1,0 +1,22 @@
+public class temperature {
+    /*less than 95  =  too cold
+    95 - 97 = normal
+    99 - 102 = fever
+    103 - 106 = high fever*/
+
+    temperature(int a) {
+        if (a <= 95) {
+            System.out.println("this is too cold");
+        } else if (a >= 95 && a <= 97) {
+            System.out.println("this is normal");
+        } else if (a >= 99 && a <= 102) {
+            System.out.println("this is fever");
+        } else if (a >= 103 && a <= 106) {
+            System.out.println("this is high fever");
+        }
+    }
+
+    public static void main(String[] args) {
+        temperature temp = new temperature(100);
+    }
+}
