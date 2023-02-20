@@ -1,0 +1,20 @@
+package payilagam;
+
+public class array {
+    void m() {
+        int a[] = {14, 5, 7, 35, 5, 63, 49, 5, 2};
+        int count = 0;
+        
+        for (int i = 0; i < a.length; i = i + 1) {
+            if (a[i] == 5) {
+                count = count + 1;
+            }
+        }
+        System.out.println(count);
+    }
+
+    public static void main(String[] args) {
+        array a = new array();
+        a.m();
+    }
+}
