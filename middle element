@@ -1,0 +1,18 @@
+package payilagam.array;
+
+public class middle_element {
+    public static void main(String[] args) {
+    
+        int a[] = {6, 3, 7, 1, 4};
+        //int a[]={6, 3, 2, 1, 4};
+
+        if (a.length % 2 == 0) {
+            //even logic
+            System.out.println(a[a.length / 2]);
+            System.out.println(a[a.length / 2 - 1]);
+        } else {
+            //odd logic
+            System.out.println(a[a.length / 2]);
+        }
+    }
+}
