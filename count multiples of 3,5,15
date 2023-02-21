@@ -4,9 +4,7 @@ public class count_multiples_3_5_15 {
     public static void main(String[] args) {
     
         int a[] = {7, 5, 4, 3, 2, 1, 0, 11, 5, 4, 6, 8, 9, 2};
-        
         int count3 = 0, count5 = 0, count15 = 0;
-        
         for (int i = 1; i < a.length; i = i + 1) {
             if (a[i] % 3 == 0) {
                 count3++;
@@ -17,9 +15,11 @@ public class count_multiples_3_5_15 {
             if (a[i] % 15 == 0) {
                 count15++;
             }
-            System.out.println(count3);
-            System.out.println(count5);
-            System.out.println(count15);
         }
+        System.out.println("count of 3 "+count3);
+        System.out.println("count of 5 "+count5);
+        System.out.println("count of 15 "+count15);
     }
+
+
 }
