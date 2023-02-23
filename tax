@@ -1,0 +1,25 @@
+public class tax {
+
+
+    public static void main(String[] args) {
+        double salary =15;
+        double lakhs = salary * 100000;
+
+        if (salary <= 2.5) {
+            System.out.println("you have a 0% of tax, so you got tax exemption ");
+        } else if ((salary >= 2.5) && (salary <= 5)) {
+            System.out.println("you have a 5% of tax, so your total amount of tax is = " +(lakhs * 5 / 100));
+        } else if ((salary >= 5) && (salary <= 7.5)) {
+            System.out.println("you have a 10% of tax, so your total amount of tax is = " +  (lakhs * 10 / 100));
+        } else if ((salary >= 7.5) && (salary <= 10)) {
+            System.out.println("you have a 15% of tax, so your total amount of tax is = " + (lakhs * 15 / 100));
+        } else if ((salary >= 10) && (salary <= 12.5)) {
+            System.out.println("you have a 20% of tax, so your total amount of tax is = " + (lakhs * 20 / 100));
+        } else if ((salary >= 12.5) && (salary <= 15)) {
+            System.out.println("you have a 25% of tax, so your total amount of tax is = " + (lakhs * 25 / 100));
+        } else if (salary > 15) {
+            System.out.println("you have a 30% of tax, so your total amount of tax is = " + (lakhs * 30 / 100));
+        }
+    }
+}
+
