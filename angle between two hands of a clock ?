@@ -1,0 +1,17 @@
+// angle between two hands of a clock ?
+
+public class hands_of_clock {
+    public static void main(String[] args) {
+        double hour =2.0;
+        double minute =20.0;
+
+        double teta = 0.5*(6.0*hour-11.0*minute);
+            if (teta<0){
+                teta=-1*teta;
+            }
+            if (teta>180){
+                teta=360-teta;
+            }
+            System.out.println(teta);
+        }
+    }
