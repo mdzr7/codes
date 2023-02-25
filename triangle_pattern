@@ -1,0 +1,15 @@
+public class triangle_3 {
+    public static void main(String[] args) {
+        int i, m = 5, n = 1;
+        for (i = 1; i <= m; i = i + 1) {
+            System.out.print(' ');
+            if (i == m) {
+                for (int j = 1; j <= n; j++) {
+                    System.out.print("* ");
+                }
+                i = 0;  m--; n++;
+                System.out.println();
+            }
+        }
+    }
+}
