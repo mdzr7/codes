@@ -1,0 +1,27 @@
+public class diamond_2 {
+    public static void main(String[] args) {
+        int i, m = 5, n = 1;
+        for (i = 1; i <= m; i = i + 1) {
+            System.out.print(' ');
+            if (i == m) {
+                for (int j = 1; j <= n; j++) {
+                    System.out.print("* ");
+                }
+                i = 0;  m--; n++;
+                System.out.println();
+            }
+        }// reverse triangle
+        int x, y = 1, z = 5;
+        for (x = 1; x <= y; x=x+1) {
+            System.out.print(" ");
+            if (x==y) {
+                for (int j = 1; j <= z; j++) {
+                    System.out.print("* ");
+                }
+                x = 0;  z--; y++;
+                System.out.println();
+                if (y==6)
+                    break;}
+        }
+    }
+}
